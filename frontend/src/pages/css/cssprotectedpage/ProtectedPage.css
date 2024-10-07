@@ -1,0 +1,107 @@
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style global */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    min-height: 100vh;
+    display: block; /* Suppression du flex héritée */
+    padding: 20px;  /* Ajout d'un padding pour éviter les conflits avec d'autres pages */
+  }
+  
+  /* Conteneur principal */
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Titres */
+  h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #28a745;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* Style du bouton Logout */
+  button {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Affichage du prix de la crypto */
+  .crypto-price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Style en cas de connexion WebSocket */
+  .ws-connecting {
+    color: #999;
+    font-style: italic;
+  }
+  
+  /* Conteneur du graphique */
+  .chart-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsiveness */
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .crypto-price {
+      font-size: 1.4rem;
+    }
+  }
+  
